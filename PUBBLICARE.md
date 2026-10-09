@@ -1,4 +1,4 @@
-# Pagine legali di Emicra — come pubblicarle
+# Pagine legali di Emycra — come pubblicarle
 
 Questa cartella contiene le pagine legali dell'app, in HTML statico. Non hanno risorse
 esterne — un solo `style.css` accanto — quindi si aprono anche da `file://` e si possono
@@ -38,21 +38,21 @@ revisione si ferma (linea guida 3.1.2). È il rifiuto già preso una volta: non 
 ## Dove pubblicarle: GitHub Pages
 
 È il modo già collaudato sull'altra app dello stesso sviluppatore, che ha un repository
-dedicato alle sole pagine legali. Per Emicra si fa la stessa cosa con un repository
+dedicato alle sole pagine legali. Per Emycra si fa la stessa cosa con un repository
 separato — così le pagine legali hanno una storia di modifiche propria e non si mescolano
 al codice dell'app.
 
-1. Crea un repository **pubblico** chiamato `emicra-legal` sull'account GitHub dello
+1. Crea un repository **pubblico** chiamato `emycra-legal` sull'account GitHub dello
    sviluppatore (`sdagostino777`).
 2. Da questa cartella:
 
    ```bash
-   cd /Users/simonedagostino/Documents/DeepSeek/APP/Emicra/Store/legal
+   cd /Users/simonedagostino/Documents/DeepSeek/APP/Emycra/Store/legal
    git init
    git add .
-   git commit -m "Pagine legali di Emicra"
+   git commit -m "Pagine legali di Emycra"
    git branch -M main
-   git remote add origin https://github.com/sdagostino777/emicra-legal.git
+   git remote add origin https://github.com/sdagostino777/emycra-legal.git
    git push -u origin main
    ```
 
@@ -61,9 +61,9 @@ al codice dell'app.
 4. L'indirizzo diventa:
 
    ```
-   https://sdagostino777.github.io/emicra-legal/            → index.html (italiano)
-   https://sdagostino777.github.io/emicra-legal/privacy.html
-   https://sdagostino777.github.io/emicra-legal/privacy.en.html
+   https://sdagostino777.github.io/emycra-legal/            → index.html (italiano)
+   https://sdagostino777.github.io/emycra-legal/privacy.html
+   https://sdagostino777.github.io/emycra-legal/privacy.en.html
    ```
 
    e così via per le altre lingue.
@@ -85,7 +85,7 @@ non c'è niente da pagare.
 1. **Apri ogni URL** e controlla che la pagina si veda con lo stile giusto (fondo scuro,
   testo leggibile): se il CSS non carica, il percorso di `style.css` è sbagliato.
 2. **Incolla gli URL** nei file di `Store/metadata/`: al posto dei segnaposto
-  `https://URL-DA-COMPILARE/…` e dei campi rimasti a `https://` va l'indirizzo vero.
+  gli indirizzi sono già quelli veri: https://sdagostino777.github.io/emycra-legal/
    Finché restano segnaposto, la scheda **non si può inviare**.
 3. **In App Store Connect**, nella scheda della versione, compila *URL di supporto* e
    *URL per l'informativa sulla privacy* **per ciascuna delle cinque localizzazioni**,
